@@ -1,5 +1,7 @@
 # Jenkins Puppeteer Docker
 
+At geckos.io we use this to test the client/server communication between browser and Node.js.
+
 ## Build and run the docker image
 
 - Run `npm run docker:build`
@@ -19,3 +21,23 @@ _You only have to do this as long as nodejs 12 is not available through the node
 - Subdirectory **node-v12.1.0-linux-x64**
 
 ![Install nodejs 12](readme/install-nodejs12.png)
+
+## Jest
+
+Use `npm install -D jest jest-puppeteer`
+
+```js
+// jest.config.js
+module.exports = {
+  preset: 'jest-puppeteer'
+}
+```
+
+```js
+// jest-puppeteer.config
+module.exports = {
+  launch: {
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  }
+}
+```
