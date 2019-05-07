@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docker:build": "docker build -t jenkins-puppeteer .",
+    "docker:build-no-cache": "docker build -t jenkins-puppeteer . --no-cache",
     "docker:run": "docker run -p 8080:8080 -p 50000:50000 jenkins-puppeteer"
   },
   "author": "",
