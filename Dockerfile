@@ -3,6 +3,9 @@ FROM jenkins/jenkins:lts
 # will be jenkins
 RUN whoami
 
+# install jenkins plugins
+RUN /usr/local/bin/install-plugins.sh nodejs blueocean
+
 # switch to root user
 USER root
 
