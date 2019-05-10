@@ -4,7 +4,7 @@ FROM jenkins/jenkins:lts
 RUN whoami
 
 # install jenkins plugins
-RUN /usr/local/bin/install-plugins.sh nodejs blueocean matrix-auth role-strategy embeddable-build-status
+RUN /usr/local/bin/install-plugins.sh nodejs blueocean matrix-auth role-strategy embeddable-build-status cobertura
 
 # switch to root user
 USER root

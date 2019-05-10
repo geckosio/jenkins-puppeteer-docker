@@ -66,3 +66,7 @@ Add a cool badge like this
 ```
 [![Jenkins](http://localhost:8080/buildStatus/icon?job=geckos.io%2Fmaster&style=flat-square)](http://localhost:8080/blue/organizations/jenkins/geckos.io/activity)
 ```
+
+## Code Coverage with cobertura
+
+See [medium.com](https://medium.com/@elisegev/running-tests-and-creating-code-coverage-reports-for-react-nodejs-project-continuously-with-60312b6a2dd0)
