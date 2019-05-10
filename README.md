@@ -41,3 +41,18 @@ module.exports = {
   }
 }
 ```
+
+# Add public Jenkins roles
+
+Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-strategy) to manage it.
+
+- Navigate to the "Manage and Assign Roles" view
+- Add a new global role, "Public" for example
+- Add only the "Overall" "Read" permission, nothing else
+- Add a new Project Role with a relevant name and pattern that matches the job you want to filter for
+- Add the "Job" "Read" permission to the new Project Role
+- Navigate to the "Assign Roles" view
+- Add user/group "Anonymous" to global roles
+- Add Anonymous to the project role you created
+
+<small>source: [stackoverflow.com](https://stackoverflow.com/a/43815311)</small>

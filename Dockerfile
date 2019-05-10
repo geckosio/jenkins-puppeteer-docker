@@ -4,7 +4,7 @@ FROM jenkins/jenkins:lts
 RUN whoami
 
 # install jenkins plugins
-RUN /usr/local/bin/install-plugins.sh nodejs blueocean
+RUN /usr/local/bin/install-plugins.sh nodejs blueocean matrix-auth role-strategy 
 
 # switch to root user
 USER root
