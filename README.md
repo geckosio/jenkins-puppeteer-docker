@@ -58,3 +58,11 @@ Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-stra
 Use a regex like `geckos\.io[\w\/-]*` to match the project name (geckos.io) and its branches (geckos.io/master).
 
 <small>source: [stackoverflow.com](https://stackoverflow.com/a/43815311)</small>
+
+## Badge
+
+Add a cool badge like this
+
+```
+[![Jenkins](http://localhost:8080/buildStatus/icon?job=geckos.io%2Fmaster&style=flat-square)](http://localhost:8080/blue/organizations/jenkins/geckos.io/activity)
+```
