@@ -42,7 +42,7 @@ module.exports = {
 }
 ```
 
-# Add public Jenkins roles
+## Add public Jenkins roles
 
 Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-strategy) to manage it.
 
@@ -57,7 +57,7 @@ Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-stra
 
 Use a regex like `geckos\.io[\w\/-]*` to match the project name (geckos.io) and its branches (geckos.io/master).
 
-<small>source: [stackoverflow.com](https://stackoverflow.com/a/43815311)</small>
+_source: [stackoverflow.com](https://stackoverflow.com/a/43815311)_
 
 ## Badge
 
