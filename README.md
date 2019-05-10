@@ -55,4 +55,6 @@ Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-stra
 - Add user/group "Anonymous" to global roles
 - Add Anonymous to the project role you created
 
+Use a regex like `geckos\.io[\w\/-]*` to match the project name (geckos.io) and its branches (geckos.io/master).
+
 <small>source: [stackoverflow.com](https://stackoverflow.com/a/43815311)</small>
