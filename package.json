@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker:build": "docker build -t jenkins-puppeteer .",
-    "docker:build-no-cache": "docker build -t jenkins-puppeteer . --no-cache",
-    "docker:run": "docker run -p 8080:8080 -p 50000:50000 jenkins-puppeteer"
+    "docker:build": "docker build -t jenkins-blueocean . --no-cache",
+    "docker:run": "docker run --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins-blueocean"
   },
   "author": "",
   "license": "MIT"

@@ -9,39 +9,6 @@ At geckos.io we use this to test the client/server communication between browser
 - Open http://localhost:8080 and finish the setup
 - Checkout blue ocean at http://localhost:8080/blue
 
-## Setting up jenkins
-
-- Add some NodeJS installations to `Jenkins > Global Tool Configuration`
-
-## Install nodejs 12
-
-_You only have to do this as long as nodejs 12 is not available through the nodejs plugin._
-
-- Download URL **https://nodejs.org/dist/v12.1.0/node-v12.1.0-linux-x64.tar.gz**
-- Subdirectory **node-v12.1.0-linux-x64**
-
-![Install nodejs 12](readme/install-nodejs12.png)
-
-## Using Jest
-
-Use `npm install -D jest jest-puppeteer`
-
-```js
-// jest.config.js
-module.exports = {
-  preset: 'jest-puppeteer'
-}
-```
-
-```js
-// jest-puppeteer.config
-module.exports = {
-  launch: {
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  }
-}
-```
-
 ## Add public Jenkins roles
 
 Use the [Role-based Authorization Strategy](https://plugins.jenkins.io/role-strategy) to manage it.
