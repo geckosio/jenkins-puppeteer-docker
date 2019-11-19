@@ -4,7 +4,7 @@ FROM jenkinsci/blueocean
 RUN whoami
 
 # install jenkins plugins
-RUN /usr/local/bin/install-plugins.sh matrix-auth role-strategy embeddable-build-status cobertura
+RUN /bin/sh -c install-plugins.sh matrix-auth role-strategy embeddable-build-status cobertura
 
 # switch to root user
 USER root
